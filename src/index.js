@@ -21,7 +21,4 @@ app.use('/api', graphqlHTTP({
 
 
 
-
-
-
 app.listen(PORT, () => console.log(`Listening server at http://localhost:${PORT}/api`))
