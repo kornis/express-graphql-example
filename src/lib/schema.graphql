@@ -22,5 +22,6 @@ input UserInput {
 type Mutation {
     "'Create User'"
     createUser(input: UserInput!): User
+    "Update user"
     updateUser(id: ID!, input: UserInput!): User
 }

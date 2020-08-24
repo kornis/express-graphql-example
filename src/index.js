@@ -13,11 +13,14 @@ db();
 const typeDefs = readFileSync(join(__dirname,'lib','schema.graphql'),'utf-8');
 const schema = makeExecutableSchema({ typeDefs, resolvers})
 
+
 app.use('/api', graphqlHTTP({
     schema,
     rootValue: resolvers,
     graphiql: true,
 }));
+
+
 
 
 
